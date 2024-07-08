@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: hsl(0, 0%, 94%);
     text-align: center;
 }
 
@@ -10,24 +10,49 @@ body {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    max-width: 600px;
+    /* max-width: 600px; */
+    width: 70vw;
+    /* height: 40vh; */
 }
 
+
 #choices {
-    margin-top: 20px;
+    margin-top: 2vw;
+}
+#title{
+    font-size: 6vw; /* Font size based on viewport width */
+    color: hsl(199, 47%, 29%);
+    font-weight: lighter;
+    font-style: oblique;
+    font-family: "Lovers Quarrel", sans-serif;
+}
+/* .lovers-quarrel-regular {
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+#title h4 {
+    /* font-family: 'Lovers Quarrel', cursive; Using the Lovers Quarrel font */
+    font-size: 3vw; /* Font size based on viewport width */
+    text-align: center; /* Center align the subtitle */
+    margin-top: -3vh; /* Adjust margin to position subtitle closer to the title */
+    font-family: Arial, sans-serif; /* Change to your desired font-family */
+    font-style: normal;
+
 }
 
 .choice-button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #4CAF50;
+    padding: 1.5vw 3vh;
+    margin: 1vw;
+    background-color: #4c77af;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 2vw;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
 }
 
 .choice-button:hover {
-    background-color: #45a049;
+    background-color: #004b6b;
 }

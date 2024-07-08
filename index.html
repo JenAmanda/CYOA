@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose Your Own Adventure</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Choose Your Own Adventure Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="title">
+        <h1>Identity Quest</h1>
+        <h4>By Amanda Jen</h2>
+    </div>
+    <div>
+        <button id="stats-button" class="choice-button">Character Stats</button>
+        <button id="about-button" class="choice-button">About Game</button>
+        <button id="restart-button" class="choice-button">Restart Game</button>
+    </div>
     <div id="story-text">
         <!-- Story narration text will be inserted dynamically -->
     </div>
     <div id="choices">
         <!-- Choice buttons will be inserted dynamically -->
     </div>
+   
     <script src="script.js"></script>
 </body>
 </html>
