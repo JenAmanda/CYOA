@@ -1,0 +1,1 @@
+//issues how to update text dynamically with variable strings and stats

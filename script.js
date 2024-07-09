@@ -3,8 +3,15 @@ const storyPages = [
         id: -2,
         text: `<p style="text-align:center;">Cece Salad</p><img src="/Cece2.jpg" alt="Character Image" style="max-width: 100%;">
         A teenager on the whisp of adulthood. Cece originally planned on studying medicine, 
-        but an impulsive choice changed her path forever.
-        
+        but an impulsive choice changed her path forever.<br><br>
+        `,
+        if(careerPath = "Chef"){
+            text: `Cece wants to become a chef.`
+        },
+        if(careerPath = "Baker"){
+            text: `Cece wants to become a baker.`
+        },
+       text: `
         <br><br> Can you help Cece achieve her dreams? Or will you fail and follow the path everyone else wants you to follow?`,
         //put here
         choices: [
@@ -413,17 +420,22 @@ They're all from your family. Ever since you left you've just ignored them, but 
     {
         id: 21,
         text:`Sighing you grab a glass and sip some cool water; it's has been quite the long day for you. Uncle Barry has been very 
-accommodating compared to your parents. Your parents...
-
-*if (parents="bad")
-   You can't hide from your parents forever... If you continue like this you might really ruin your relationship with them. Uncle Barry may have been able to pursue his love for music, but at what cost?
-   *goto homeb
-*if (parents="ok")
-   After talking to your parents they've calmed down. A bit. They still don't like what you're doing but at least they aren't driving to the city to bring you back. At least ... for now.
-   *goto homeb
-*if (parents="good")
-   Your parents while disappointed, told you they didn't mean to come off so harshly. You're glad they'are accepting your choice. With your parents backing your decision you'll be able to attend school without a fuss. Your mother even said she'd send you money to help pay for your expenses.
-`,
+        accommodating compared to your parents. Your parents...`,
+        
+        if(famRel = "Good"){
+            text: `Your parents while disappointed, told you they didn't 
+            mean to come off so harshly. You're glad they'are accepting your choice. With your parents 
+            backing your decision you'll be able to attend school without a fuss. 
+            Your mother even said she'd send you money to help pay for your expenses.`
+        },
+        if(famRel = "Ok"){
+            text: `After talking to your parents they've calmed down. A bit. They still don't like what
+             you're doing but at least they aren't driving to the city to bring you back. At least ... for now.`
+        },
+        if(famRel = "Bad"){
+            text:` You can't hide from your parents forever... If you continue like this you might really ruin your relationship with them. Uncle Barry may have been able to pursue his love for music, but at what cost?
+ `
+        },
         choices:[{
             id: 12, text: "Next page", nextPageId: 22
         }]
